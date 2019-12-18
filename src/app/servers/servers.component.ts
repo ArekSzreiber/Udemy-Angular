@@ -9,6 +9,7 @@ import {Component, OnInit} from '@angular/core';
     <app-server></app-server>
     <app-server></app-server>
     <app-server></app-server>
+    <button class="btn-danger">Button</button>
   `,
   styleUrls: ['./servers.component.css']
 })
