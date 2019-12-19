@@ -1,3 +1,4 @@
+/* tslint:disable:no-inferrable-types */
 import {Component} from '@angular/core';
 
 @Component({
@@ -5,6 +6,11 @@ import {Component} from '@angular/core';
   templateUrl: './server.component.html'
 })
 export class ServerComponent {
+  id: number = 1;
+  status: string = 'offline';
 
+  getServerStatus() {
+    return this.status;
+  }
 }
 
