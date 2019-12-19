@@ -1,3 +1,6 @@
 <!-- {{this must evaluate to string in the end}} -->
-<p [ngStyle]="{backgroundColor: getColor()}">{{'Server'}} with id {{id}} is {{getServerStatus()}}</p>
+<p
+  [ngStyle]="{backgroundColor: getColor()}"
+  [ngClass]="{online: status==='online'}"
+>{{'Server'}} with id {{id}} is {{getServerStatus()}}</p>
 
