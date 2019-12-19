@@ -1,7 +1,13 @@
+<label></label>
+<input type="text"
+       class="form-control"
+       (input)="onUpdateServerName($event)">
+<p>{{serverName}}</p>
 <button
   class="btn btn-success"
   [disabled]="!allowNewServer"
-  (click)="onCreateServer()">Add Server</button>
+  (click)="onCreateServer()">Add Server
+</button>
 <!--property binding use squared brackets-->
 <!--parentheses for event binding-->
 
