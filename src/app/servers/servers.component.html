@@ -29,5 +29,4 @@ If the condition is not met, the <p> does not even exist in the DOM -->
     No server was created
   </p>
 </ng-template>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
