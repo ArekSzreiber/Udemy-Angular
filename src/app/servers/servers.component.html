@@ -1,8 +1,13 @@
 <button
   class="btn btn-success"
-  [disabled]="!allowNewServer">Add Server</button>
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()">Add Server</button>
+<!--property binding use squared brackets-->
+<!--parentheses for event binding-->
+
 <!--<p>{{allowNewServer}}</p>-->
-<p [innerText]="allowNewServer"></p>
+<!--<p [innerText]="allowNewServer"></p>-->
+<p>{{serverCreationStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
 <app-server></app-server>
