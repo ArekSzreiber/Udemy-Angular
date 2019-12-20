@@ -17,7 +17,8 @@ export class DisplayDetailsComponent implements OnInit {
 
   onToggleDisplay() {
     this.displayParagraph = !this.displayParagraph;
-    this.clicks.push(this.clicks.length+1);
+    // this.clicks.push(this.clicks.length+1);
+    this.clicks.push(new Date());
   }
 
 }
